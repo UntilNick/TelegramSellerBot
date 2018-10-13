@@ -33,7 +33,7 @@ def mainmenu(message):
             for marketId in range(len(market)):
                 keyboard.add(telebot.types.InlineKeyboardButton(text='{0} - {1}p'.format(market[marketId].split('-')[0],
                                                                                          int(market[marketId].split('-')[1].replace(' ', '').replace('p', '')) - skidSum),
-                                                                callback_data=market[marketId].split('-')[0])) #Большое кол-во говнокода, чтобы все автоматизировать блять
+                                                                callback_data=market[marketId].split('-')[0])) #Большое кол-во говнокода, чтобы все автоматизировать
                 skidon = 1  #У человека есть скидка
     if skidon == 0: #Если у человека нет скидки
         for marketId in range(len(market)):
@@ -57,7 +57,7 @@ def msg(message):
                     promostate.pop(state) #Удаление из массива тех, кто должен ввести промик
                     bot.send_message(message.chat.id, SuccesfullPromoText.format(promos[i])) #Оповещение о том, что все прошло успешно
                     bot.send_message(message.chat.id, mainmenuText, reply_markup=mainmenu(message))#Отправление меню
-                    return#Уходим, чтобы он дальше не начал творить хуету
+                    return#Уходи
             bot.send_message(message.chat.id, PromoErrorText)#Отправляем ошибку
             promostate.pop(state)#Удаление из массива юзеров, которые должны ввести промик
             bot.send_message(message.chat.id, mainmenuText, reply_markup=mainmenu(message))#Отправляем меню
