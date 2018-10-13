@@ -2,7 +2,7 @@
 Easy way to sell some thrash in telegram
 
 
-<img src="https://i.imgur.com/c2TjAqg.gifv"/>
+<img src="https://i.imgur.com/c2TjAqg.gif"/>
 
 
 
