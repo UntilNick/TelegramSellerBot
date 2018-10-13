@@ -5,7 +5,7 @@
 import telebot
 # /////////////////////////////////////////////////
 promos = ['#es3n1n', '#debug']                                                                     #Обьявление в массив самих промокодов
-market = ['gowno - 123p', 'ssaka - 123p', 'parasha - 135р', 'sosatb - 101p']                       #Товары в шопе
+market = ['gowno - 123p']                                                                          #Товары в шопе
 skidSum = 50                                                                                       #сумма скидона в рублях
 
 mainmenuText = 'Main Menu\n\nDeveloper - @es3n1n'                                                  #Текст, который бот пишет в меню
